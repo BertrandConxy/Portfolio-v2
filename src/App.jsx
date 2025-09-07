@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import profileImage from './assets/profile-2.png'
+import CarParkImage from './assets/car_park_counter.png'
+import ChatBotImage from './assets/chatbot.png'
+import EtlImage from './assets/etl.png'
+import HeartDetectorImage from './assets/heartDetector.png'
 
 function App() {
   // State for app loading animation
@@ -115,15 +119,15 @@ function App() {
               <div className="service-content">
                 <h3>Data Engineering</h3>
                 <span className="service-number">03</span>
-                <p>Design and implement data pipelines, analytics solutions, and AI-powered insights to help your business make data-driven decisions.</p>
+                <p>Architect and maintain data pipelines, analytics platforms, and AI-driven insights to help your organization achieve smarter, data-informed decisions.</p>
               </div>
             </div>
             <div className="service-card">
               <div className="service-icon">🤖</div>
               <div className="service-content">
-                <h3>AI Consulting</h3>
+                <h3>AI Integration</h3>
                 <span className="service-number">04</span>
-                <p>Leverage my TikTok expertise in AI education to help integrate artificial intelligence solutions into your business processes and strategy.</p>
+                <p>Implement intelligent AI features, automation, and custom fine-tuned models into your systems to elevate efficiency, scalability, and customer engagement.</p>
               </div>
             </div>
           </div>
@@ -137,58 +141,80 @@ function App() {
             <h2>Selected<br />work</h2>
           </div>
           <div className="portfolio-grid">
-            <div className="portfolio-item">
-              <div className="portfolio-image">
-                <div className="portfolio-placeholder mobile-app"></div>
-              </div>
-              <div className="portfolio-info">
-                <h3>E-COMMERCE TESTING SUITE</h3>
-                <span className="portfolio-year">2024</span>
-                <div className="portfolio-tags">
-                  <span className="tag">AUTOMATION</span>
-                  <span className="tag">TESTING</span>
+            <a href="https://github.com/BertrandConxy/Car-parking-space-counter" target="_blank" rel="noopener noreferrer">
+              <div className="portfolio-item">
+                <div className="portfolio-image">
+                  <div className="portfolio-placeholder mobile-app">
+                    <img src={CarParkImage} alt="Car Parking Space Counter" className="project-image" />
+                  </div>
+                </div>
+                <div className="portfolio-info">
+                  <h3>Car Parking Space Counter</h3>
+                  <span className="portfolio-year">2024</span>
+                  <div className="portfolio-tags">
+                    <span className="tag">Computer Vision</span>
+                    <span className="tag">Object Detection</span>
+                    <span className="tag">Development</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="portfolio-item">
-              <div className="portfolio-image">
-                <div className="portfolio-placeholder web-app"></div>
-              </div>
-              <div className="portfolio-info">
-                <h3>AI DATA PIPELINE</h3>
-                <span className="portfolio-year">2024</span>
-                <div className="portfolio-tags">
-                  <span className="tag">DATA ENG</span>
-                  <span className="tag">AI/ML</span>
+            </a>
+            <a href="https://github.com/BertrandConxy/Tax-Geek-AI-chatbot" target="_blank" rel="noopener noreferrer"> 
+              <div className="portfolio-item">
+                <div className="portfolio-image">
+                  <div className="portfolio-placeholder web-app">
+                    <img src={ChatBotImage} alt="Tax Geek AI Chatbot" className="project-image" />
+                  </div>
+                </div>
+                <div className="portfolio-info">
+                  <h3>Tax Geek AI Chatbot</h3>
+                  <span className="portfolio-year">2025</span>
+                  <div className="portfolio-tags">
+                    <span className="tag">AI</span>
+                    <span className="tag">RAG</span>
+                    <span className="tag">Embeddings</span>
+                    <span className="tag">LangChain</span>
+                    <span className="tag">LangSmith</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="portfolio-item">
-              <div className="portfolio-image">
-                <div className="portfolio-placeholder dashboard"></div>
-              </div>
-              <div className="portfolio-info">
-                <h3>ANALYTICS DASHBOARD</h3>
-                <span className="portfolio-year">2024</span>
-                <div className="portfolio-tags">
-                  <span className="tag">REACT</span>
-                  <span className="tag">DATA VIZ</span>
+            </a>
+            <a href="https://github.com/BertrandConxy/Uber-data-analytics" target="_blank" rel="noopener noreferrer">
+              <div className="portfolio-item">
+                <div className="portfolio-image">
+                  <div className="portfolio-placeholder dashboard">
+                    <img src={EtlImage} alt="Uber Data Analytics" className="project-image" />
+                  </div>
+                </div>
+                <div className="portfolio-info">
+                  <h3>Uber Data Analytics</h3>
+                  <span className="portfolio-year">2024</span>
+                  <div className="portfolio-tags">
+                    <span className="tag">ETL Pipeline</span>
+                    <span className="tag">Data Visualization</span>
+                    <span className="tag">GCP</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="portfolio-item">
-              <div className="portfolio-image">
-                <div className="portfolio-placeholder mobile-ui"></div>
-              </div>
-              <div className="portfolio-info">
-                <h3>TIKTOK AI CONTENT</h3>
-                <span className="portfolio-year">2024</span>
-                <div className="portfolio-tags">
-                  <span className="tag">CONTENT</span>
-                  <span className="tag">AI EDUCATION</span>
+            </a>
+            <a href="https://github.com/BertrandConxy/Heart-disease-predictor-ML" target="_blank" rel="noopener noreferrer">
+              <div className="portfolio-item">
+                <div className="portfolio-image">
+                  <div className="portfolio-placeholder mobile-ui">
+                    <img src={HeartDetectorImage} alt="Heart Disease Predictor" className="project-image" />
+                  </div>
+                </div>
+                <div className="portfolio-info">
+                  <h3>Heart Disease Predictor</h3>
+                  <span className="portfolio-year">2025</span>
+                  <div className="portfolio-tags">
+                    <span className="tag">ML</span>
+                    <span className="tag">Data Analysis</span>
+                    <span className="tag">Data Visualization</span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
